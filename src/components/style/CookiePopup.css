@@ -1,0 +1,109 @@
+.cookieBox{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000ae;
+    z-index: 9;
+}
+.cardCookie {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+    height: 36vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+    z-index: 10;
+}
+
+.photoCookie{
+    height: 100px;
+    width: 100px;
+}
+  
+  .cookieHeading {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+    margin-top: -20px;
+  }
+  
+  .cookieDescription {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+  }
+  
+  .cookieDescription a {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246);
+  }
+  
+  .cookieDescription a:hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  
+  .acceptButton {
+    width: 80px;
+    height: 30px;
+    background-color: #0075BE ;
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px #0e7dc1 , 0 2px 4px -1px #977ef3;
+    transition: all .6s ease;
+  }
+  
+  .declineButton {
+    width: 80px;
+    height: 30px;
+    background-color: #FFCC00;
+    transition-duration: .2s;
+    color: rgb(46, 46, 46);
+    border: none;
+    cursor: not-allowed;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px #fccd11, 0 2px 4px -1px #bebdbd;
+    transition: all .6s ease;
+  }
+  
+  .declineButton:hover {
+    background-color: #D5A100;
+    box-shadow: 0 10px 15px -3px #d4a415, 0 4px 6px -2px #bebdbd;
+    transition-duration: .2s;
+  }
+  
+  .acceptButton:hover {
+    background-color: #0A285F;
+    box-shadow: 0 10px 15px -3px #133167, 0 4px 6px -2px #977ef3;
+    transition-duration: .2s;
+  }
+
+  @media (max-width: 768px) {
+    .cardCookie{
+        height: 50vh;
+        width: 85%;
+    }
+  }

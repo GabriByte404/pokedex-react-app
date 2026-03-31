@@ -1,0 +1,355 @@
+/* Stile globale */
+main{
+  background-color: #192935;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pokemon-text {
+  font-family: 'Pokemon', sans-serif;
+  font-size: 85px;
+  color: #FFCC00;
+  text-shadow:
+    3px 0px 0 #D5A100,
+    -4px -4px 0 #0075BE,
+    6px -4px 0 #0075BE,
+    -4px 4px 0 #0075BE,
+    6px 4px 0 #0075BE,
+    -8px 6px 0 #0A285F,
+    0px 6px 0 #0A285F; 
+  z-index: 10;
+  height: 10vh;
+  padding-top: 2vh;
+  padding-left: 10vh;
+}
+
+.pikaMascotte{
+  position: absolute;
+  top: 62%;
+  left: 57%;
+  height: 200px;
+  width: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../public/img/mini-pika.png');
+  z-index: 10;
+}
+
+/* login FORM */
+.form{
+  background-color: #bfbebe;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 2px 0px 8px 5px #FFCC00;
+}
+
+.mainCont{
+  height: 90vh;
+}
+
+@media (max-width: 768px) {
+  .mainCont{
+    min-height: 75vh;
+  }
+  .form{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 5vh;
+  }
+  .pokemon-text{
+    font-size: 55px;
+    padding-top: 0vh;
+    padding-left: 2vh;
+  }
+  .pikaMascotte{
+    left: 65%;
+    top: 65%;
+    height: 150px;
+    width: 115px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  font-weight: bold;
+  margin: 1.8em;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px #050505;
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Errore Email/Password */
+#errorDiv{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FB1B1B;
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: '04b_19', sans-serif;
+}
+
+/* check */
+.checkbox-wrapper-4 {
+  box-sizing: border-box;
+  color: white;
+  font-size: 13px;
+}
+
+.checkbox-wrapper-4 .cbx {
+  margin-top: 0.5em;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.checkbox-wrapper-4 .cbx:not(:last-child) {
+  margin-right: 6px;
+}
+
+.checkbox-wrapper-4 .cbx:hover {
+  background: #ffcc000e
+}
+
+.checkbox-wrapper-4 .cbx span {
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-4 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  transform: scale(1);
+  border: 1px solid #cccfdb;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 1px rgba(0,16,75,0.05);
+}
+
+.checkbox-wrapper-4 .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-4 .cbx span:last-child {
+  padding-left: 8px;
+  line-height: 18px;
+}
+
+.checkbox-wrapper-4 .cbx:hover span:first-child {
+  border-color: #FFCC00;
+}
+
+.checkbox-wrapper-4 .inp-cbx {
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
+  background: #FFCC00;
+  border-color: #FFCC00;
+  animation: wave-4 0.4s ease;
+}
+
+.checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-4 .inline-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 640px) {
+  .checkbox-wrapper-4 .cbx {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@-moz-keyframes wave-4 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes wave-4 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@-o-keyframes wave-4 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes wave-4 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+/* auto-completamento */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #d3d3d3;
+  -webkit-box-shadow: 0 0 0px 1000px #171717 inset;
+}
+
+/* sweetAlert */
+:root {
+  --swal2-background-color: #333;
+  --swal2-title-color: #fff;
+  --swal2-text-color: #ccc;
+  --swal2-confirm-color: #f44336;
+}
+.my-swal-title-class{
+  color: #D5A100;
+  font-size: 25px;
+  font-family: '04b_19',sans-serif;
+}
+.custom-popup-warning {
+  background-color: #333 !important;
+  border: 5px solid #D5A100;
+  border-radius: 50px;
+}
+
+.my-swal-titleError-class{
+  color: #000000;
+  font-size: 25px;
+  font-family: '04b_19',sans-serif;
+}
+
+.custom-popup-error {
+  background-color: #FB1B1B !important;
+  border: 5px solid #333;
+  border-radius: 50px;
+}
+.custom-popup-confirm {
+  background-color: #FFCC00 !important;
+  border: 5px solid #0A285F;
+  border-radius: 50px;
+}
+.my-swal-titleConfirm-class{
+  color: #0A285F;
+  font-size: 25px;
+  font-family: '04b_19',sans-serif;
+}

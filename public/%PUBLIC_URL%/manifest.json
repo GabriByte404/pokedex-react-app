@@ -1,0 +1,21 @@
+{
+    "short_name": "Pokemon DB",
+    "name": "Pokemon Database: Designed to know and order pokemon!",
+    "icons": [
+      {
+        "src": "pokeball.png",
+        "sizes": "128x128 64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "pokeball.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "pokeball.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+}  
