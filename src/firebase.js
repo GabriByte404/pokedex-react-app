@@ -6,7 +6,7 @@ import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   databaseURL: "https://poked3x-db-default-rtdb.firebaseio.com/",
-  apiKey: "AIzaSyDsl7O3lK9rXPDVX6skcTZWYlqFAJb0KG4",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "poked3x-db.firebaseapp.com",
   projectId: "poked3x-db",
   storageBucket: "poked3x-db.appspot.com",
